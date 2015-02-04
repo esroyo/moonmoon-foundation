@@ -1,7 +1,7 @@
 # moonmoon-foundation
 A base [foundation](http://foundation.zurb.com) theme for [moonmoon](http://moonmoon.org) feed agregator.
 
-It is a mobile friendly version of the default moonmoon theme.
+This is a mobile friendly version of the default moonmoon theme.
 
 Requirements
 ------------
@@ -12,11 +12,14 @@ Usage
 ----------
 Work from your moonmoon base directory.
 If you don't have a copy, get it now:
+
 ```sh
 git clone https://github.com/mauricesvay/moonmoon
 cd moonmoon
 ```
-* Make a backup of the default moonmoon theme. For example:
+
+Make a backup of the default moonmoon theme. For example:
+
 ```sh
 git mv custom/views/default/ custom/views/fallback/
 git mv custom/views/archive/ custom/views/fallback-archive/
@@ -27,13 +30,18 @@ sed -i s/default.css/fallback.css/ custom/views/fallback-archive/head.tpl.php
 
 git commit -a -m 'Backup the default moonmoon theme'
 ```
-* Pull this repo:
+
+Pull this repo:
+
 ```sh
 git pull https://github.com/esroyo/moonmoon-foundation.git
 ```
-* Change directory to `custom` and execute `bower install`.
+
+Change directory to `custom` and execute `bower install`.
+
 ```sh
 cd custom
 bower install
 ```
-* You are ready to go. [Customize](http://foundation.zurb.com/docs/) as you wish ;)
+
+You are ready to go. [Customize](http://foundation.zurb.com/docs/) as you wish ;)
