@@ -10,15 +10,30 @@ Requirements
 
 Usage
 ----------
-From your moonmoon base directory:
+Work from your moonmoon base directory.
+If you don't have a copy, get it now:
+```sh
+git clone https://github.com/mauricesvay/moonmoon
+cd moonmoon
+```
 * Make a backup of the default moonmoon theme. For example:
 ```sh
-mv custom/views/default/ custom/views/fallback/
-mv custom/views/archive/ custom/views/fallback-archive/
-mv custom/style/default.css custom/style/fallback.css
+git mv custom/views/default/ custom/views/fallback/
+git mv custom/views/archive/ custom/views/fallback-archive/
+git mv custom/style/default.css custom/style/fallback.css
+
 sed -i s/default.css/fallback.css/ custom/views/fallback/head.tpl.php
 sed -i s/default.css/fallback.css/ custom/views/fallback-archive/head.tpl.php
+
+git commit -a -m 'Backup the default moonmoon theme'
 ```
-* Clone this repo.
+* Pull this repo:
+```sh
+git pull https://github.com/esroyo/moonmoon-foundation.git
+```
 * Change directory to `custom` and execute `bower install`.
-* You are ready to go. Customize as you wish.
+```sh
+cd custom
+bower install
+```
+* You are ready to go. [Customize](http://foundation.zurb.com/docs/) as you wish ;)
