@@ -58,7 +58,7 @@ header('Content-type: text/html; charset=UTF-8');
                         </section>
                         <section class="article-content">
                             <?php /* echo $item->get_content(); */ ?>
-                            <?php echo preg_replace('/(<[^>]+) (script|style|id|class)=(["\']).*?\3/i', '$1', $item->get_content()); ?>
+                            <?php echo preg_replace('/(<[^>]+) (style|id|class)=(["\']).*?\3/i', '$1', $item->get_content()); ?>
                         </section>
                     </article>
                     <?php if (++$count == $limit) { break; } ?>
