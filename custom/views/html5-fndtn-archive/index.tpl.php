@@ -1,4 +1,11 @@
 <?php
+/* should be removed on moonmoon > 8.12 */
+if (!function_exists('_g')) {
+    function _g($str, $comment) {
+        return $str;
+    }
+}
+
 $count = 0;
 $today = Array();
 $week = Array();

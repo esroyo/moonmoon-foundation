@@ -5,37 +5,12 @@ This is a mobile friendly version of the default moonmoon theme.
 
 Requirements
 ------------
-* This repo is based on [moonmoon current git version](https://github.com/mauricesvay/moonmoon). It won't work with stable version (v8.12).
+* [moonmoon](http://moonmoon.org) (only tested version 8.12)
 * [Bower](http://bower.io)
 
 Usage
 ----------
-Work from your moonmoon base directory.
-If you don't have a copy, get it now:
-
-```sh
-git clone https://github.com/mauricesvay/moonmoon
-cd moonmoon
-```
-
-Make a backup of the default moonmoon theme. For example:
-
-```sh
-git mv custom/views/default/ custom/views/fallback/
-git mv custom/views/archive/ custom/views/fallback-archive/
-git mv custom/style/default.css custom/style/fallback.css
-
-sed -i s/default.css/fallback.css/ custom/views/fallback/head.tpl.php
-sed -i s/default.css/fallback.css/ custom/views/fallback-archive/head.tpl.php
-
-git commit -a -m 'Backup the default moonmoon theme'
-```
-
-Pull this repo:
-
-```sh
-git pull https://github.com/esroyo/moonmoon-foundation.git
-```
+Download the ZIP file of this repo and extract the `custom` folder into your moonmoon base directory.
 
 Change directory to `custom` and execute `bower install`.
 
@@ -44,4 +19,11 @@ cd custom
 bower install
 ```
 
-You are ready to go. [Customize](http://foundation.zurb.com/docs/) as you wish ;)
+You are ready to [customize](http://foundation.zurb.com/docs/) the theme as you wish.
+
+To use it as it is, modify `index.php` so it defaults to `html5-fndtn` theme. For example:
+
+```sh
+sed -i s/default/html5-fndtn/ /your_moonmoon_base_dir/index.php
+```
+

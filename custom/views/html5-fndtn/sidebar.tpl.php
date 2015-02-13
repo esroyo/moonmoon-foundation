@@ -28,7 +28,7 @@ usort($all_people, array('PlanetFeed', 'compare'));
     <section>
         <h2><?php echo _g('Archives')?></h2>
         <ul>
-            <li><a href="?type=archive"><?php echo _g('See all headlines')?></a></li>
+            <li><a href="?type=html5-fndtn-archive"><?php echo _g('See all headlines')?></a></li>
         </ul>
     </section>
 </aside>
