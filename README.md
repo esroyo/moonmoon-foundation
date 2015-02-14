@@ -5,7 +5,7 @@ This is a mobile friendly version of the default moonmoon theme.
 
 Requirements
 ------------
-* [moonmoon](http://moonmoon.org) (only tested version 8.12)
+* [moonmoon](http://moonmoon.org) 8.12
 * [Bower](http://bower.io)
 
 Usage
